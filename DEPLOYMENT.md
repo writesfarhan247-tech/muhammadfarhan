@@ -9,13 +9,9 @@ visitors must review it and press Send in WhatsApp.
 
 ## Before publishing
 
-The `assets/` folder currently contains `ProfileImage.jpeg` and
-`Muhammad_Farhan_CV.pdf`, but the project records say final publication
-approval is pending. A static host can serve any file placed inside the
-published site folder, even if the page does not link to it. Before
-uploading publicly, either obtain approval for these files or remove
-them from the deployment copy. Keep the originals in the working
-project; do not delete them as part of this checklist.
+The profile image and CV in `assets/` are linked on the portfolio.
+Include the entire `assets/` folder in the published site so the image
+and CV links work.
 
 Also review the site for approved real project descriptions and
 screenshots. Current project cards are placeholders. Do not publish
@@ -33,8 +29,8 @@ confidential marketplace/account information.
    `script.js`, `project-data.js`, and approved public assets, if any)
    into the deploy area. Do not upload the `docs/` folder unless those
    internal planning documents are intentionally meant to be public.
-5. Open the generated HTTPS site URL and verify the navigation, project
-   details, contact form, and WhatsApp handoff again on that hosted URL.
+5. Open the generated HTTPS site URL and verify the profile image, CV
+   link, navigation, project details, contact form, and WhatsApp handoff.
 6. To publish updates, repeat the drag-and-drop deployment with the
    updated public site files. Configure a custom domain in Netlify only
    if one is available and desired.
@@ -52,9 +48,8 @@ provider's HTTPS and custom-domain setup instructions.
 
 ## Handover checklist
 
-- [ ] Approve the profile image and final CV, or keep the page
-  placeholders and exclude the existing unconfirmed files from the
-  public deployment copy.
+- [ ] Confirm the profile image displays and the CV opens or downloads
+  from the deployed site.
 - [ ] Supply approved project details/screenshots; replace the
   placeholders in `project-data.js` and redact client information.
 - [ ] Confirm any additional eBay services, specific Etsy tasks, or
@@ -73,6 +68,5 @@ provider's HTTPS and custom-domain setup instructions.
 - Client-side validation can be bypassed and is not a substitute for
   server-side validation or spam protection.
 - No form submission is stored by this static site.
-- The final profile/CV approval and real project materials remain
-  pending.
+- Real project materials remain pending.
 - A public deployment has not been created or verified.

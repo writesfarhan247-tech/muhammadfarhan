@@ -19,7 +19,7 @@ index.html       Portfolio sections, shared navigation/footer, metadata
 styles.css       Design tokens, responsive styles, and shared components
 script.js        Mobile navigation, project dialog, and contact validation
 project-data.js  Editable project entries for the gallery
-assets/          Owner-provided files, pending confirmation for publication
+assets/          Profile photo and CV used by the portfolio
 docs/            Requirements, design, roadmap, rules, and project memory
 ```
 
@@ -48,7 +48,7 @@ To add a project, add another entry. To edit one, update its fields. To remove o
 
 ## Profile photo and CV
 
-The current site uses a labeled profile placeholder and a disabled CV state. Workspace files named `assets/ProfileImage.jpeg` and `assets/Muhammad_Farhan_CV.pdf` are not linked because the project records still require owner confirmation that they are approved final assets. After confirmation, replace the profile placeholder markup in `index.html` with an image using descriptive alt text and update its styling as needed. For an approved CV, update the CV section to link to the confirmed PDF; do not point to an unapproved or fabricated file.
+The hero displays `assets/ProfileImage.jpeg` with descriptive alt text. The CV section links to `assets/Muhammad_Farhan_CV.pdf` so visitors can view or download it. Include the `assets/` folder when deploying the site.
 
 ## Contact and integrations
 

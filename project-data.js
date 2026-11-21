@@ -5,7 +5,16 @@ window.portfolioProjects = [
     description: "Approved project description to be supplied by Muhammad Farhan.",
     role: "To be supplied",
     tools: "To be confirmed",
-    screenshots: [],
+    screenshots: [
+      {
+        src: "assets/Screenshot 2026-11-21 123849.png",
+        alt: "eBay account management project screenshot"
+      },
+      {
+        src: "assets/Screenshot 2026-11-21 123930.png",
+        alt: "eBay account management project screenshot"
+      }
+    ],
     url: ""
   },
   {

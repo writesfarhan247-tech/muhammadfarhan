@@ -67,7 +67,7 @@
             <div class="button-group">
               <a class="button button--primary" href="#projects">View My Projects</a>
               <a class="button button--secondary" href="#about">About Me</a>
-              <a class="button button--secondary" href="#cv" aria-label="View CV status">CV coming soon</a>
+              <a class="button button--secondary" href="#cv">View My CV</a>
               <a
                 class="button button--secondary"
                 href="https://wa.me/923220796724?text=Hi%2C%20I%20visited%20your%20portfolio%20website%20and%20would%20like%20to%20discuss%20a%20project"
@@ -77,11 +77,13 @@
             </div>
           </div>
 
-          <div class="profile-placeholder" role="img" aria-label="Profile photo placeholder; owner confirmation is pending">
-            <span class="placeholder-mark" aria-hidden="true">MF</span>
-            <span class="profile-placeholder__label">Profile photo placeholder</span>
-            <span class="profile-placeholder__note">Awaiting owner confirmation</span>
-          </div>
+          <img
+            class="profile-image"
+            src="assets/Professional eBay Store Management Profile.png"
+            alt="Portrait of Muhammad Farhan"
+            width="1254"
+            height="1254"
+          >
         </div>
         <div class="container hero__footnote">
           <span>Based in Multan, Punjab, Pakistan</span>
@@ -190,20 +192,19 @@
         <div class="container cv-layout">
           <div class="section-heading">
             <p class="eyebrow">Curriculum vitae</p>
-            <h2 id="cv-title">CV preview</h2>
-            <p>The final CV is awaiting owner confirmation. The existing PDF in the workspace is not linked until it is confirmed as approved for publication.</p>
+            <h2 id="cv-title">My CV</h2>
+            <p>View or download my curriculum vitae.</p>
           </div>
-          <div class="cv-placeholder">
-            <div class="cv-placeholder__icon" aria-hidden="true">PDF</div>
-            <div class="cv-placeholder__copy">
-              <span class="status-label">Not available yet</span>
-              <h3>Final CV PDF</h3>
-              <p>Preview and download will be enabled when the approved CV is supplied.</p>
+          <div class="cv-card">
+            <div class="cv-card__icon" aria-hidden="true">PDF</div>
+            <div class="cv-card__copy">
+              <span class="status-label">Available now</span>
+              <h3>Muhammad Farhan CV</h3>
+              <p>PDF document</p>
             </div>
-            <button class="button button--disabled" type="button" disabled aria-describedby="cv-status">
-              CV coming soon
-            </button>
-            <span class="visually-hidden" id="cv-status">The CV is not available for download.</span>
+            <a class="button button--primary" href="assets/Muhammad_Farhan_CV.pdf" target="_blank" rel="noopener noreferrer">
+              View or Download CV
+            </a>
           </div>
         </div>
       </section>

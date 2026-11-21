@@ -57,12 +57,28 @@ function renderProjectCards() {
     trigger.type = "button";
     trigger.dataset.projectIndex = String(index);
     trigger.setAttribute("aria-haspopup", "dialog");
-    trigger.setAttribute("aria-label", `View placeholder details for ${project.category}`);
+    trigger.setAttribute(
+      "aria-label",
+      project.screenshots.length
+        ? `View ${project.category} project and screenshots`
+        : `View placeholder details for ${project.category}`
+    );
 
     const visual = document.createElement("span");
     visual.className = "project-card__visual";
     visual.setAttribute("aria-hidden", "true");
-    visual.textContent = "Image placeholder";
+
+    if (project.screenshots.length) {
+      visual.classList.add("project-card__visual--screenshots");
+      for (const screenshot of project.screenshots) {
+        const image = document.createElement("img");
+        image.src = screenshot.src;
+        image.alt = "";
+        visual.append(image);
+      }
+    } else {
+      visual.textContent = "Image placeholder";
+    }
 
     const category = document.createElement("span");
     category.className = "project-card__category";
@@ -74,7 +90,9 @@ function renderProjectCards() {
 
     const note = document.createElement("span");
     note.className = "project-card__note";
-    note.textContent = "Placeholder — not a client project";
+    note.textContent = project.screenshots.length
+      ? `${project.screenshots.length} project screenshots`
+      : "Placeholder — not a client project";
 
     trigger.append(visual, category, title, note);
     card.append(trigger);
